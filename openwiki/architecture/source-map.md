@@ -40,4 +40,4 @@ Use this page to choose the smallest source slice for a change. Start with the [
 
 ## Git landmarks
 
-`cf05589` is the initial implementation commit. `eadc3c4` and `6e948db` concern OpenSpec workflow tooling. `2dd89d9` adds generated Graphify output. There are no later route/ingestion implementation commits in the inspected history, so source and active specs may diverge without a corrective follow-up commit.
+The repository has a single squashed commit (`d6e8791`) that includes all source packages, OpenSpec specs and workflow tooling, scripts, tests, and generated Graphify output. There is no prior commit history to diff against, so source and active specs may diverge without a corrective follow-up commit.
