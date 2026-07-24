@@ -51,7 +51,7 @@ Settings use the `ICT_GRAPH_` environment prefix (`src/config/settings.py`). Imp
 
 ## Git and change context
 
-Commit `cf05589` introduced the initial GraphRAG platform, including all major `src/` domains and OpenSpec requirements. `eadc3c4` and `6e948db` added/updated OpenSpec workflow commands and skills. `2dd89d9` added generated `graphify-out` analysis artifacts. There is little implementation history after the initial platform commit, so treat current source as authoritative and verify OpenSpec intent against behavior.
+The repository has a single squashed commit (`d6e8791`) containing all source, OpenSpec specs, scripts, tests, and generated `graphify-out` artifacts. There is no prior commit history to diff against; treat current source as authoritative and verify OpenSpec intent against behavior.
 
 ## Backlog
 
