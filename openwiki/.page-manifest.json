@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/source-map.md": {
+      "pageVersion": "sha256:f9eef5cfe9384300614681b79d8200a662cca052bcf125c8b864535595805e08",
+      "completedBy": "openwiki/0.5.2",
+      "completedRunId": "f1006f5f-0faa-48c7-8ade-50781cb7bc28",
+      "gitHead": "f098d26d751a47f8a0ec804a3f1ed51e90dd3be3",
+      "sourceFingerprint": "sha256:67c4a950bb7f6adec310be370db9671e3fa40ffd83b23cea09bb668c852484c6"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:5f45656db186bc983028e80a75210ed0b1beb4e8a24439e85c9cb74f46b03d24",
+      "completedBy": "openwiki/0.5.2",
+      "completedRunId": "f1006f5f-0faa-48c7-8ade-50781cb7bc28",
+      "gitHead": "f098d26d751a47f8a0ec804a3f1ed51e90dd3be3",
+      "sourceFingerprint": "sha256:67c4a950bb7f6adec310be370db9671e3fa40ffd83b23cea09bb668c852484c6"
+    }
+  }
+}

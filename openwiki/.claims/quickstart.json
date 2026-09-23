@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:5f45656db186bc983028e80a75210ed0b1beb4e8a24439e85c9cb74f46b03d24",
+  "claims": [
+    {
+      "id": "claim_6ecd1eebb38a4e08a0fab4c24387e81a",
+      "statement": "The repository head is the single squashed commit f098d26d751a47f8a0ec804a3f1ed51e90dd3be3 (short f098d26); the local clone is shallow with one commit and the reflog records only a master to main branch rename, so there is no prior commit history to diff against.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L40",
+          "version": "repo-lines-v1:sha256:b120ae5d2076c6e08ad45c90f8fedd69443728ee073d1c239ad01888ba61984e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiMjQ3NjA4MGVjZTFmMDhmNTQ3ZDlmYTRkNmYwZjU5OGM3ZDE3OGE4M2JhMjk5OGE1ZjdlZTE2NTMzMmRhMzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlZWI4MmM5OTk5NWRlODY3YmQwNGViMWRlNWY0NDBhNTc1M2FkZTViMjUzODU5M2U3OGU3MWUzMGVmZDA4NzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8977703bf4664028b637d927e6a22aac",
+      "statement": "The /ask endpoint supplies a zero vector in place of a real embedding because the configured embedding model is never invoked; embedding helpers in src/graph/embeddings.py only define Cypher upsert/query helpers and do not compute vectors.",
+      "evidence": [
+        {
+          "resource": "repo://src/api/routes.py#L42-L61",
+          "version": "repo-lines-v1:sha256:94b586a99c4a31e793488851c79ab69fa1183813ca1518f79ea30cfd5dda2e9b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3YTQ3NzE3MGU2YTQzOGQxNzdiYzdiZmIzZGJmM2Y3MDg2NTNlYTE5NDM3Njg0ZGY1ZTQxZDYzNWMyY2E4MzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkYjhkZWE0MmVlMjRmOGI0NDE1YjEwZTIwYmYzMTAxNjU3NDBhZmFhZTE5ZjFmODUyM2Y2MGE1NmNmYTBlOWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0MjZiZDA2OGNiZjI2YmY3YTA0ZGY0Y2ZkZGRkODI3MzY4Y2YxMjNkNjE5MmZkODFhZDExYjdhZTQ4NzUyYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVkZTM5NGZkYjEzMmQ1MmQ1ODdkMmU4OTc0MGY4M2EzMmM5ODJhZmMwMzVmOGE2YTJjMzIxM2VmZGRjZjkyZWYifQ"
+        },
+        {
+          "resource": "repo://src/graph/embeddings.py#L8-L46",
+          "version": "repo-lines-v1:sha256:adc7e73a8bc6d945067eb683bd02a85dcb52b42c983c16602f04279dff58f2ba:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyN2MyNDRmYzExZTFkYWE4YTBhYmU3MWVmMzIyOWNmODg1OGJjOWQ1YzVlM2VmZWEwMGRlOTYyOGIwOThkYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwMDA4NzFjZTBjODNhYTdiNDdhYzA3YzkyMTViYTU0MWU2NTRmYzNiOGNlNmNmNWJkMmJhNTJkY2EzOWM4NjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5MGY4ZTVkYTBjOWU1YzRmYmY1NThlN2IwMmQ0YmNmOTk3OGRkZTE1ZDA0YjNkMGQzZTYwMWRmNzI0OTg2MWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY1MDU5NzNmM2UwZjRiMjc0ODMyMzRkMGRhNmRhZWEyNWNjMmFlYjZmMzZjNzljOTRiZmZmOWY5MTE2Y2EwNDAifQ"
+        },
+        {
+          "resource": "repo://src/ingestion/tasks.py#L34-L56",
+          "version": "repo-lines-v1:sha256:d1aa4e788c8a6b04b40d983091452795c4e4313996c950af5db21f249a255c4d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkODZiMTBiMmJmNjEwYmQ4MTY5OWY2ZmU0ZmQ5NWVjNmNhOWEzNDE3ZWMwNzk1YTFkMzI5NjkzZTM3M2UxYTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVhOGUxYjA1NTQxZWU4YWRkMzBmM2Y4ZmJmNWRmMWZiYWExODc4MjYxN2IyYjI4YzdjYTM0Y2EwMTA5OWZmYjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhMzIyZDhjZjMyNTg4NmYwZDE1NjEzM2Y0ODYxYzJjNDE3MTdiNTM0MGY2NzZhYWExOTI4YTZmNTRkNDVjMTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRlZmY5MTMxYTRjNjk1NmFkNjAzZjRkZDFmNzIxMDYxNjgzYzA0YmNlYjE3N2NhNjMzZGE5MDUwYWUzMzM0MmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_708580276b9e49dd8d415a6db3b54acf",
+      "statement": "Versioned web ingestion is incomplete: detect_changes classifies pages as new, existing, or removed and marks stale sources unavailable, but changed existing pages are not reprocessed or versioned; process_new_page only handles new pages.",
+      "evidence": [
+        {
+          "resource": "repo://src/ingestion/detector.py#L16-L34",
+          "version": "repo-lines-v1:sha256:237f27ce62778ba290546693e462c439c77d86f2bf260c09b03224eea2d80105:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlYWViZmRkNWFlNGIyZmIyZDBjZTcwYmM1YzQyZmRiZDQ3NmU5YzJjMjNmN2Q4Y2Q0YWY4NmUwOGU4MTUyZjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjZjVkOTA5ODljZGUyMDhiNGE4ZmJlMDFmYmQ3M2Q0MTYxOGE1YzI4NDhiYmMwMWVkZDI5NTliMWYzM2Y4ODMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1NDRjYjlkNTFmYmVhNjM5MDMzMjk0NmQ2MjBjM2U2ZmEyMjllNjMwZTBhZTUyNjFlMGFiOThjYzgzMmYxZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIwODJjMTJiNmI0N2I0MmViNzRmMTVlMTJkZDQ4N2ZiMDYwNWM0MjlhNzUwMzIyZWMyOGE0MzJlZWYwNGI5ZjAifQ"
+        },
+        {
+          "resource": "repo://src/ingestion/tasks.py#L13-L59",
+          "version": "repo-lines-v1:sha256:0536c50511fa88c94c9cfa85c5ad8d3e599876e447f090c6b48d1cb29be06ce7:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3OGVkMmQyMTAyZjA3ODIxODkxNTBlN2I3OTQ3ODQzMDBiYzEyNmMyMTQ3ZTQ4ZjhiOTE2MjFmNmIzMjZjYTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmOWEyODNkMTkxZDIwMjU3OGFiODNhMjZiYjFlNzAzMGI0Yjk5ZjRmMjk0YzFkOTYxZDk0YmFlNDc1NmM1YWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5MGY4ZTVkYTBjOWU1YzRmYmY1NThlN2IwMmQ0YmNmOTk3OGRkZTE1ZDA0YjNkMGQzZTYwMWRmNzI0OTg2MWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_825f528b4dcd492cb250b3244b97f101",
+      "statement": "Graph-aware retrieval and citations remain unwired to the public response contract: hybrid_search_with_graph and traversal helpers exist, but /ask calls the plain hybrid_search without graph context, and citations.py is not referenced from the answer path.",
+      "evidence": [
+        {
+          "resource": "repo://src/api/routes.py#L42-L77",
+          "version": "repo-lines-v1:sha256:34bd66f9959b65959cd22661b15be8cab98b8c8023ff79f55385949e8f7edc66:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3YTQ3NzE3MGU2YTQzOGQxNzdiYzdiZmIzZGJmM2Y3MDg2NTNlYTE5NDM3Njg0ZGY1ZTQxZDYzNWMyY2E4MzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0MjZiZDA2OGNiZjI2YmY3YTA0ZGY0Y2ZkZGRkODI3MzY4Y2YxMjNkNjE5MmZkODFhZDExYjdhZTQ4NzUyYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFiOTljY2MxMTVmN2E3NjViMWE4YzIzNzMwNmE2ZTFlMDVlNzk5OTgwOGQ3ZDc5YjlmM2MzN2ZmMGVmYzhkNmUifQ"
+        },
+        {
+          "resource": "repo://src/retrieval/hybrid.py#L15-L53",
+          "version": "repo-lines-v1:sha256:d9266201edebc9c0d65c802db719cc644f4503fbb47e035339c7747a4521dddf:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyY2UyMjg0MzMzMjUyYzc2MWEzYWU5OGZmZGY1MWE5NmM2MzAxMzY2NjE5MWRiODgxOGI3NWJhMDMzM2YwNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlYzBiNDg3YjY5MGU3N2ZjM2Q4ZjM4YWJhYTdlOTdiM2E1ODExNmFiMGRiNDYyNGUwZmQxYTUyNzVlMjc2NzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5YTExNGM3ODczY2ZiYzU5ZDczYmUyMDhjZDQyMWZjNDNlYzNmN2M0ZGY2YWIyNDk2MmI0ZGNmNGYzMmYzNjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/retrieval/traversal.py#L1-L88",
+          "version": "repo-lines-v1:sha256:226ffb12fb1666ce6a483f227846e4cd4e7027ba91f8b853567eea2f198bc8c8:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBhNTYwMjZiMDdmMTFmZGUyNmYzNzZhZGY2YWY3MDAwMGZiYjhmYzc2MzJiNWM4MGYyZTExYzJiZDVkYTdmYzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZTBhN2U5ZmQ1M2VkMTIyNTc0ZWJkMTAxNTVjNzY5ZTUzNjQxZjc3YTNkNmU4NmQyNzMwMGM0OTQ3YjllNDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6f3012e78188445dba4c0a35583510ad",
+      "statement": "Compose defines infrastructure services (neo4j, postgres, redis, minio) and a Celery worker, but no API service; the API is run directly via uvicorn outside Compose.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L37-L38",
+          "version": "repo-lines-v1:sha256:c0abcc5c865eeb409316750a420582ccc5b120a6533e05918f238b34e2cbdafe:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhhYWQwZGU3MjE4ZTU0YTQxZTk3OTlkNGM1NDYwZDMwMzc4YzM2ZjQ1ZTAzNDhiYmM0Y2ZiOTEwNDhjNTMwMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWMxMzI0ZTM1ZWY2ZjMwNDY2M2MzNDkxZjQ0OWYwZGYxN2I3NWJiMjIzN2Y1MThkODllOGQ5NTZkNzk1ZmMwOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWMxMzk0OGQxMTc2ZGUwNDM5ZmFhY2FjMmFiMDc0Y2ExNzExMTQzMDMyOWRmYTg0Mjk1MDViYjgyOWYxZmFlNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjMxOThhYTQzNTFhZGNlYmE3NTMwMGM1MmExMjBjOGNjNTUwYTQwYTgwODhlNGFjYjYxOTgwMDU3MTRiZGM1OSJ9"
+        },
+        {
+          "resource": "repo://docker-compose.yml#L1-L72",
+          "version": "repo-lines-v1:sha256:12c608753422584787eb6a553d85928c0835b66af9d3bb80db3add5247c639f3:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhNzNmY2NkYzk5ZWE4MzU5NjdjN2RlZTdlZmJlZDFmM2NhODcyNjBkOTI5MzE4NTBmZGQ2NmRhOGNiMTJmMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MDBjOGMxMTJlMTdlZGM3NzI4NTE0ZmZkM2M5ZGRjNjBjYzZjZjM5MGUzMzIwMWViY2VmM2M3YzkxMjljYjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T13:16:57.818Z"
+  }
+}

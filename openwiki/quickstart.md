@@ -3,6 +3,27 @@ type: Repository Guide
 title: ICT GraphRAG quickstart
 description: "Entry point for the ICT-SJC UNESP GraphRAG repository: local setup, architecture navigation, operational commands, and implementation caveats."
 tags: [quickstart, graphrag, ict-sjc, unesp]
+verified:
+  - by: openwiki/0.5.2
+    at: 2026-09-23T13:16:57.818Z
+sources:
+  - id: openwiki-source-b79fbbd921df689b4bbdc82f
+    resource: repo://docker-compose.yml
+  - id: openwiki-source-23775c3de52f3ab95a13cb8b
+    resource: repo://README.md
+  - id: openwiki-source-0489c8303d3285aaf19b39b6
+    resource: repo://src/api/routes.py
+  - id: openwiki-source-8de6d3861fa39f982e6fde0c
+    resource: repo://src/graph/embeddings.py
+  - id: openwiki-source-42da20bb2825d6cc793bc550
+    resource: repo://src/ingestion/detector.py
+  - id: openwiki-source-ae75406cec9978a99614cc0f
+    resource: repo://src/ingestion/tasks.py
+  - id: openwiki-source-102bbf58de971a70759e52d0
+    resource: repo://src/retrieval/hybrid.py
+  - id: openwiki-source-9265cc65831fcabb279a942d
+    resource: repo://src/retrieval/traversal.py
+generated: { by: "openwiki/0.5.2", at: "2026-09-23T13:16:57.818Z" }
 ---
 # ICT GraphRAG
 
@@ -51,7 +72,7 @@ Settings use the `ICT_GRAPH_` environment prefix (`src/config/settings.py`). Imp
 
 ## Git and change context
 
-The repository has a single squashed commit (`d6e8791`) containing all source, OpenSpec specs, scripts, tests, and generated `graphify-out` artifacts. There is no prior commit history to diff against; treat current source as authoritative and verify OpenSpec intent against behavior.
+The repository has a single squashed commit (`f098d26`, full hash `f098d26d751a47f8a0ec804a3f1ed51e90dd3be3`) containing all source, OpenSpec specs, scripts, tests, and generated `graphify-out` artifacts. There is no prior commit history to diff against; the local clone is shallow and the reflog records only a `master` → `main` branch rename. Treat current source as authoritative and verify OpenSpec intent against behavior.
 
 ## Backlog
 

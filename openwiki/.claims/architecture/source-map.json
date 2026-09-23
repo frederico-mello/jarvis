@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f9eef5cfe9384300614681b79d8200a662cca052bcf125c8b864535595805e08",
+  "claims": [
+    {
+      "id": "claim_f4cc0486a6b749a085ab059ec8f5e18c",
+      "statement": "src is organized into seven top-level packages: api (FastAPI assembly, routes, JWT admin checks, rate limiting, health, audit), config (environment-backed settings and ICT sector taxonomy), ingestion (crawler, change detector, document processors, chunking, storage, Celery tasks, worker), graph (Neo4j driver/schema, entities, extraction validation, provenance, embeddings, seed), retrieval (search, hybrid merge, graph traversal, generation, safety, citations, source status), conversation (logs, analytics, clustering, FAQ/cache), and common (shared exceptions and structured logging).",
+      "evidence": [
+        {
+          "resource": "repo://src/api/app.py",
+          "version": "repo-file-v1:sha256:7b2c3187f92ca61fb9bee27539287fb09bc7cbc87e4c88ed4a3444bf219b8372"
+        },
+        {
+          "resource": "repo://src/common/exceptions.py",
+          "version": "repo-file-v1:sha256:2fa19648d2643607dfc0fa4a734aa5bc0aca820889f40fb3e86feaf6c55d3fcd"
+        },
+        {
+          "resource": "repo://src/conversation/logs.py",
+          "version": "repo-file-v1:sha256:b3f7be0c4ef172bf0819e3e6ac6fc081a97a0f2f6f0beef91c91a49c03c88882"
+        },
+        {
+          "resource": "repo://src/graph/entities.py",
+          "version": "repo-file-v1:sha256:834a5aedfc082fc9a054b5a17d4d8301e32bf446ce73ee0afc0febfc96ddc468"
+        },
+        {
+          "resource": "repo://src/ingestion/document_processor.py",
+          "version": "repo-file-v1:sha256:87379d4f23472231d2bab4756abef9f4689bf838447f0b1df2c5bbb693dc3242"
+        },
+        {
+          "resource": "repo://src/main.py",
+          "version": "repo-file-v1:sha256:8684a2869a611a9eb00fe708091f4d1ac564b119b83f06cc3102140e0b09d92d"
+        },
+        {
+          "resource": "repo://src/retrieval/hybrid.py",
+          "version": "repo-file-v1:sha256:68dd0de708c7749ec7077acd9f8311a607dcfd2b0525b09da88ab31ea504813a"
+        }
+      ]
+    },
+    {
+      "id": "claim_032702deb8824b789a08e3eca3a88e65",
+      "statement": "openspec/specs/ holds active requirements for authorized-document-upload, conversation-logs, faq-discovery, knowledge-graph, public-question-answering, source-citations, and source-ingestion, while the archived initial change lives under openspec/changes/archive/2026-07-20-initial-graphrag-platform/ and OpenSpec command/skill files live under .opencode/.",
+      "evidence": [
+        {
+          "resource": "repo://.opencode/commands/opsx-apply.md",
+          "version": "repo-file-v1:sha256:e3d54dcd5d6735e4677a812e1ff08044afba7bd39c22dc75512de396b6e59b8b"
+        },
+        {
+          "resource": "repo://openspec/changes/archive/2026-07-20-initial-graphrag-platform/proposal.md",
+          "version": "repo-file-v1:sha256:da2391aa3900c073b24f92b3a9e88236c6b24d63b4f15f103ebbaa73e0aa6960"
+        },
+        {
+          "resource": "repo://openspec/specs/authorized-document-upload/spec.md",
+          "version": "repo-file-v1:sha256:85a6f10c0b61876a48c174c7144921b7dc5fbdc02a9e961cc3a6eff6e4f3675f"
+        },
+        {
+          "resource": "repo://openspec/specs/conversation-logs/spec.md",
+          "version": "repo-file-v1:sha256:8815456a28e96ebf8157db0113f478fa1a177d7245b25bede6f3a70ae2f525fa"
+        },
+        {
+          "resource": "repo://openspec/specs/faq-discovery/spec.md",
+          "version": "repo-file-v1:sha256:189588df78d255d4c073d567a684ae13e51438fc61e13930ae04a70bb29c4c28"
+        },
+        {
+          "resource": "repo://openspec/specs/knowledge-graph/spec.md",
+          "version": "repo-file-v1:sha256:d7c1fe3f4bffd9a164bfac102a5b7eeb07a436fdf874bf958d7af4d380022bd7"
+        },
+        {
+          "resource": "repo://openspec/specs/public-question-answering/spec.md",
+          "version": "repo-file-v1:sha256:e7d8f9866e45e54402ef32530b1641871881d74f8f055ad889891c69de1406ec"
+        },
+        {
+          "resource": "repo://openspec/specs/source-citations/spec.md",
+          "version": "repo-file-v1:sha256:75d3b69152c84c84ce513145662990f5ba860fb6e888f51cb0522c4b1edb4fb2"
+        },
+        {
+          "resource": "repo://openspec/specs/source-ingestion/spec.md",
+          "version": "repo-file-v1:sha256:6c77cd6d818bda53b093279f45b8b61945bea293240fa1fdacac9795cbe767d8"
+        }
+      ]
+    },
+    {
+      "id": "claim_32a3209de8b74d58a316780d914fd49d",
+      "statement": "Operational and validation surfaces are scripts/setup-dev.sh (dev setup), scripts/backup.sh and scripts/restore.sh (backup/restore), tests/test_regression.py (chunking, extraction, safety, graph extraction validation, sector config), tests/test_evaluation.py and tests/sample_questions.py (evaluation harness), and graphify-out/ (generated graph analysis artifacts, not a runtime source of truth).",
+      "evidence": [
+        {
+          "resource": "repo://graphify-out/manifest.json",
+          "version": "repo-file-v1:sha256:874e7a4c5707cba53165317b59c2bac3fe1559c9ac46f30f0da91d298bfb2930"
+        },
+        {
+          "resource": "repo://scripts/setup-dev.sh",
+          "version": "repo-file-v1:sha256:efac091d92c2ffff8fa6ca4984479ad701ca16d64149d2ee2a0381712ae0ccca"
+        },
+        {
+          "resource": "repo://tests/test_evaluation.py",
+          "version": "repo-file-v1:sha256:45adb1072773c23cf2b0afc5335394e037d0fa63f6ef8f764f735e6cb4975d09"
+        },
+        {
+          "resource": "repo://tests/test_regression.py",
+          "version": "repo-file-v1:sha256:699bb29a9e8d8920670b08753ac5f6db24d5490df228929dabe68a8121929f34"
+        }
+      ]
+    },
+    {
+      "id": "claim_1e25f712921546249f4ea9fa5ee191bd",
+      "statement": "Root configuration comprises README.md (Portuguese setup, commands, API examples, package overview), pyproject.toml (Python package metadata, runtime/dev dependencies, Ruff and strict mypy settings), .env.example (placeholder configuration surface), Dockerfile and docker-compose.yml (worker image and local infrastructure topology), and src/main.py (Uvicorn development entrypoint).",
+      "evidence": [
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:0d0bdca92198f79d716f8633c09b2378730ac8dd4889c69225fabc890df7d95b"
+        },
+        {
+          "resource": "repo://pyproject.toml",
+          "version": "repo-file-v1:sha256:7bf57a6d1e352330fde3b50aa68a7fd8541c1c2cc3febb292cc5645782eecec3"
+        },
+        {
+          "resource": "repo://src/main.py",
+          "version": "repo-file-v1:sha256:8684a2869a611a9eb00fe708091f4d1ac564b119b83f06cc3102140e0b09d92d"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T13:16:57.818Z"
+  }
+}
